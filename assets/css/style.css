@@ -1,0 +1,511 @@
+body {
+    font-family: 'Montserrat',sans-serif; 
+    background: url("../img/pattern-randomized.svg");
+}
+
+header {
+    background: #333333;
+    padding: 5px 0;
+    border-radius: 0px 0px 150px 100px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #A72076;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #DF4C24;
+}
+
+nav li:nth-last-child(2){
+    padding: 5px;
+    /*background: rgb(223,76,36);
+    background: linear-gradient(90deg, rgba(223,76,36,1), rgba(167,32,118,1));*/
+    background: #25D366;
+    box-sizing: border-box;
+    border-radius: 5px ;
+}
+
+nav li:nth-last-child(2) img{
+    width: 5%;
+    margin: auto;
+}
+
+nav li:last-of-type {
+    padding: 5px;
+    background: rgb(223,76,36);
+    background: linear-gradient(90deg, rgba(223,76,36,1), rgba(167,32,118,1));
+    box-sizing: border-box;
+    border-radius: 5px ;
+}
+
+.nav-font {
+    color: white;
+    font-weight: bold ;
+}
+
+.nav-font:hover {
+    color: #333333;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+.intro h1 {
+    margin: 0 1.5%;
+    padding: 100px 0px 20px 20px;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #A72076;
+    text-shadow: 0 0 1em #A72076, 0 0 0.2em #A72076;
+}
+
+.intro p {
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    font-size: 35px;
+    color: #F0F0F0;
+}
+
+.img-intro {
+    width: 120%;
+}
+
+.sobre-nos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 940px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.sobre-nos h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #A72076;
+}
+
+.img-sobrenos {
+    width: 120%;
+}
+
+.sobre-nos p {
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    font-size: 20px;
+    color: #F0F0F0;
+}
+
+.principal {
+    width: 940px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.principal h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    /*background: -webkit-linear-gradient(0deg, rgba(223,76,36,1), rgba(167,32,118,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #A72076;
+}
+
+.principal p {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 20px 0px;
+    color: #F0F0F0;
+}
+
+.principal lottie-player{
+    width: 30%;
+    margin:  auto;
+}
+
+.servicos {
+    width: 940px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 50px;  
+}
+
+.servicos h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #A72076;
+}
+
+.servicos p {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 30px;
+    color: #F0F0F0;
+}
+
+.container-servicos {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "itens-servicos1 arvore-servicos itens-servicos2"
+    "itens-servicos3 arvore-servicos itens-servicos4"
+    "itens-servicos5 arvore-servicos itens-servicos6";
+ }
+
+ .container-servicos h3 {
+    font-size: 15px;
+    color: #F0F0F0;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-servicos p{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.itens-servicos1{
+    grid-area: itens-servicos1;
+}
+
+.arvore-servicos {
+    grid-area: arvore-servicos;
+}
+
+.arvore-servicos img{
+    width: 100%;
+}
+
+.itens-servicos2{
+    grid-area: itens-servicos2;
+}
+
+.itens-servicos3{
+    grid-area: itens-servicos3;
+}
+
+.itens-servicos4{
+    grid-area: itens-servicos4;
+}
+
+.itens-servicos5{
+    grid-area: itens-servicos5;
+}
+
+.itens-servicos6{
+    grid-area: itens-servicos6;
+}
+
+.img-servicos {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 10px 0 0 0;
+}
+
+.mapa {
+    width: 940px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 10rem var(--gap);
+}
+
+.mapa h3 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #A72076;
+}
+
+.mapa p{
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 30px;
+    color: #F0F0F0;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background: #333333;
+    border-radius: 150px 150px 0px 0px;
+}
+
+.caixa-footer {
+    margin: 0 auto;
+    min-height: 90vh;
+    width: 940px;
+}
+
+.container-footer {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "logo-footer institucional-footer servicos-footer parceiros-footer";
+   
+}
+
+.container-footer h4 {
+    font-size: 20px;
+    color: #F0F0F0;
+    text-align: center;
+    padding: 10px;
+}
+
+.container-footer p{ 
+    text-align: center;   
+    padding: 5px 10px 5px 10px;     
+    color: #F0F0F0;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-footer a{
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.container-footer a:hover {
+    color: #A72076;
+}
+
+.logo-footer {
+    display: block;
+    grid-area: logo-footer;
+    border-right: 1px solid #F0F0F0;
+}
+
+.b2i-logo-footer {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.rede-social li{
+    display: inline-block;
+    width: 49%;
+}
+
+.rede-social i {
+    display: block;
+    font-size: 48px;
+    color: #A72076;
+    text-align: center;
+}
+
+.rede-social i:hover {
+    color: #DF4C24;
+}
+
+.institucional-footer {
+    grid-area: institucional-footer;
+    border-right: 1px solid #F0F0F0;
+}
+
+.servicos-footer {
+    grid-area: servicos-footer;
+    border-right: 1px solid #F0F0F0;
+}
+
+.parceiros-footer {
+    grid-area: parceiros-footer;
+}
+
+.parceiros-footer img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.parceiros-footer a {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 5rem;
+    right: 1.3rem;
+    color: #A72076;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.back-to-top:hover{
+    color: #DF4C24;
+}
+
+.copyright {
+    background: #222222;
+}
+
+.copyright p{
+    text-align: center;
+    padding: 1em;
+    color: #F0F0F0;
+}
+
+@media screen  and (max-width: 800px)  {
+    .caixa, .intro, .sobre-nos, .principal, .servicos,.mapa, .mapa-conteudo, .caixa-footer, .img-intro, .img-sobrenos{
+        width: auto;
+    }
+    header {
+        border-radius: 0px;
+    }
+    nav {
+        position: static;
+    }
+    nav li {
+        margin: 0 auto;
+    }
+    nav a {
+        font-size: 15px;
+    }
+    .logo{
+        display: block;
+        margin: 0 auto;
+    }
+    .intro {
+        grid-template-columns: 1fr;    
+    }
+    .intro h1 {
+        padding: 30px 20px 0px 20px;
+        font-size: 40px;
+    }
+    .intro p {
+        padding: 15px 20px 0px 20px;
+        font-size: 35px;
+    }
+    .img-intro {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .sobre-nos {
+        grid-template-columns: 1fr;    
+    }
+    .sobre-nos h2 {
+        font-size: 40px;
+    }
+    .sobre-nos p {
+        padding: 15px 20px;
+    }
+    .principal h2 {
+        font-size: 40px;
+        padding: 20px 0px;
+    }
+    .principal p {
+        font-size: 20px;
+    }
+    .principal lottie-player{
+        width: 60%;
+    }
+    .servicos h2{
+        font-size: 40px;
+    }
+    .container-servicos {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "arvore-servicos"
+        "itens-servicos1"
+        "itens-servicos2" 
+        "itens-servicos3" 
+        "itens-servicos4"
+        "itens-servicos5";
+     }
+     .arvore-servicos img{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .mapa {
+        min-height: 80vh;
+    }
+    .mapa h3 {
+        font-size: 40px;
+    }
+    .container-footer {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+        "logo-footer"
+        "institucional-footer" 
+        "servicos-footer" 
+        "parceiros-footer";       
+    }
+    .logo-footer {
+        border-right: 0px;
+        border-bottom: 1px solid #F0F0F0;
+        width: 100%;
+    }
+
+    .rede-social i{
+       padding-bottom: 1rem;
+    }
+    
+    .institucional-footer {
+        border-right: 0px;
+        border-bottom: 1px solid #F0F0F0;
+        padding: 1rem;
+    }
+    
+    .servicos-footer {
+        border-right: 0px;
+        border-bottom: 1px solid #F0F0F0;
+        padding: 1rem;
+    }
+    .copyright {
+        min-height: 25vh;
+    }
+    
+}
