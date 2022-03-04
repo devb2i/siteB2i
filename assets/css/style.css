@@ -406,7 +406,16 @@ footer {
     nav {
         position: static;
     }
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
     nav li {
+        align-items: center;
+        display: inline-block;
         margin: 0 auto;
     }
     nav a {
@@ -430,7 +439,7 @@ footer {
     .img-intro {
         display: block;
         margin: 0 auto;
-        width: 80%;
+        width: auto;
     }
     .sobre-nos {
         grid-template-columns: 1fr;    
@@ -449,7 +458,7 @@ footer {
         font-size: 20px;
     }
     .principal lottie-player{
-        width: 60%;
+        width: auto;
     }
     .servicos h2{
         font-size: 40px;
@@ -486,7 +495,7 @@ footer {
     .logo-footer {
         border-right: 0px;
         border-bottom: 1px solid #F0F0F0;
-        width: 100%;
+        width: auto;
     }
 
     .rede-social i{
@@ -505,7 +514,7 @@ footer {
         padding: 1rem;
     }
     .copyright {
-        min-height: 25vh;
+        min-height: 10vh;
     }
     
 }
