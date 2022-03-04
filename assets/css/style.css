@@ -108,6 +108,17 @@ nav li:last-of-type {
     width: 940px;
     margin: 0 auto;
     min-height: 100vh;
+    grid-template-areas: 
+    "img-sobrenos texto-sobrenos";
+}
+
+.texto-sobrenos {
+    grid-area: texto-sobrenos;
+}
+
+.img-sobrenos {
+    width: 120%;
+    grid-area: img-sobrenos;
 }
 
 .sobre-nos h2 {
@@ -115,10 +126,6 @@ nav li:last-of-type {
     text-align: center;
     font-weight: bold;
     color: #A72076;
-}
-
-.img-sobrenos {
-    width: 120%;
 }
 
 .sobre-nos p {
@@ -236,7 +243,7 @@ nav li:last-of-type {
 .img-servicos {
     display: block;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     padding: 10px 0 0 0;
 }
 
@@ -442,7 +449,10 @@ footer {
         width: auto;
     }
     .sobre-nos {
-        grid-template-columns: 1fr;    
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "texto-sobrenos"
+        "img-sobrenos" ;    
     }
     .sobre-nos h2 {
         font-size: 40px;
@@ -465,6 +475,7 @@ footer {
     }
     .container-servicos {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
         "arvore-servicos"
         "itens-servicos1"
@@ -473,11 +484,18 @@ footer {
         "itens-servicos4"
         "itens-servicos5";
      }
-     .arvore-servicos img{
+     .container-servicos div {
         display: block;
-        width: 50%;
         margin: 0 auto;
+        padding: 0;
     }
+    .arvore-servicos {
+        width: 50%;
+    }
+    .img-servicos {
+        width: auto;
+    }
+
     .mapa {
         min-height: 80vh;
     }
