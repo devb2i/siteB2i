@@ -1,10 +1,17 @@
+:root {
+    --cor-principal: #A72076;
+    --cor-secundario: #DF4C24;
+    --cor-preto: #333;
+    --cor-whatsapp: #25D366;
+    --cor-branco: #F0F0F0;
+}
 body {
     font-family: 'Montserrat',sans-serif; 
     background: url("../img/pattern-randomized.svg");
 }
 
 header {
-    background: #333333;
+    background: var(--cor-preto);
     padding: 5px 0;
     border-radius: 0px 0px 150px 100px;
 }
@@ -32,20 +39,20 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #A72076;
+    color: var(--cor-principal);
     font-size: 16px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #DF4C24;
+    color: var(--cor-secundario);
 }
 
 nav li:nth-last-child(2){
     padding: 5px;
     /*background: rgb(223,76,36);
     background: linear-gradient(90deg, rgba(223,76,36,1), rgba(167,32,118,1));*/
-    background: #25D366;
+    background: var(--cor-whatsapp);
     box-sizing: border-box;
     border-radius: 5px ;
 }
@@ -64,12 +71,12 @@ nav li:last-of-type {
 }
 
 .nav-font {
-    color: white;
+    color: var(--cor-branco);
     font-weight: bold ;
 }
 
 .nav-font:hover {
-    color: #333333;
+    color: var(--cor-preto);
 }
 
 .intro {
@@ -87,15 +94,15 @@ nav li:last-of-type {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #A72076;
-    text-shadow: 0 0 1em #A72076, 0 0 0.2em #A72076;
+    color: var(--cor-principal);
+    text-shadow: 0 0 1em var(--cor-principal), 0 0 0.2em var(--cor-principal);
 }
 
 .intro p {
     margin: 0 1.5%;
     padding: 30px 20px;
     font-size: 35px;
-    color: #F0F0F0;
+    color: var(--cor-branco);
 }
 
 .img-intro {
@@ -125,14 +132,14 @@ nav li:last-of-type {
     font-size: 60px;
     text-align: center;
     font-weight: bold;
-    color: #A72076;
+    color: var(--cor-principal);
 }
 
 .sobre-nos p {
     margin: 0 1.5%;
     padding: 30px 20px;
     font-size: 20px;
-    color: #F0F0F0;
+    color: var(--cor-branco);
 }
 
 .principal {
@@ -145,17 +152,14 @@ nav li:last-of-type {
     font-size: 60px;
     text-align: center;
     font-weight: bold;
-    /*background: -webkit-linear-gradient(0deg, rgba(223,76,36,1), rgba(167,32,118,1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    color: #A72076;
+    color: var(--cor-principal);
 }
 
 .principal p {
     font-size: 25px;
     text-align: center;
     padding: 10px 20px 0px;
-    color: #F0F0F0;
+    color: var(--cor-branco);
 }
 
 .principal lottie-player{
@@ -174,14 +178,14 @@ nav li:last-of-type {
     font-size: 60px;
     text-align: center;
     font-weight: bold;
-    color: #A72076;
+    color: var(--cor-principal);
 }
 
 .servicos p {
     font-size: 25px;
     text-align: center;
     padding: 20px 30px;
-    color: #F0F0F0;
+    color: var(--cor-branco);
 }
 
 .container-servicos {
@@ -197,7 +201,7 @@ nav li:last-of-type {
 
  .container-servicos h3 {
     font-size: 15px;
-    color: #F0F0F0;
+    color: var(--cor-branco);
     font-weight: bold;
     padding: 10px;
     text-align: center;
@@ -258,14 +262,14 @@ nav li:last-of-type {
     font-size: 60px;
     text-align: center;
     font-weight: bold;
-    color: #A72076;
+    color: var(--cor-principal);
 }
 
 .mapa p{
     font-size: 25px;
     text-align: center;
     padding: 20px 30px;
-    color: #F0F0F0;
+    color: var(--cor-branco);
 }
 
 .mapa-conteudo {
@@ -274,8 +278,52 @@ nav li:last-of-type {
     margin: auto;
 }
 
+.area-comercial {
+    width: 940px;
+    display: block;
+    margin: auto;
+    min-height: 35vh;
+}
+
+.area-comercial-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.texto-comercial{
+    font-size: 3rem;
+    color: var(--cor-principal);
+    text-shadow: 0 0 1em var(--cor-principal), 0 0 0.2em var(--cor-principal);
+    letter-spacing: -1px;
+}
+
+.button-comercial{
+    display: block;
+    margin: auto;
+}
+
+.button-comercial button {
+    background: rgb(223,76,36);
+    background: linear-gradient(90deg, rgba(223,76,36,1), rgba(167,32,118,1));
+    box-sizing: border-box;
+    border-radius: 30px ;
+    border: none;
+    padding: 1rem;
+}
+
+.button-comercial a{
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--cor-branco);
+}
+
+.button-comercial button:hover{
+    box-shadow: 0px 0px 30px 1px var(--cor-principal);
+    background: var(--cor-principal);
+}
+
 footer {
-    background: #333333;
+    background: var(--cor-preto);
     border-radius: 150px 150px 0px 0px;
 }
 
@@ -297,7 +345,7 @@ footer {
 
 .container-footer h4 {
     font-size: 20px;
-    color: #F0F0F0;
+    color: var(--cor-branco);
     text-align: center;
     padding: 10px;
 }
@@ -305,25 +353,25 @@ footer {
 .container-footer p{ 
     text-align: center;   
     padding: 5px 10px 5px 10px;     
-    color: #F0F0F0;
+    color: var(--cor-branco);
     text-decoration: none;
     display: block;
     margin: 0 auto;
 }
 
 .container-footer a{
-    color: #F0F0F0;
+    color: var(--cor-branco);
     text-decoration: none;
 }
 
 .container-footer a:hover {
-    color: #A72076;
+    color: var(--cor-principal);
 }
 
 .logo-footer {
     display: block;
     grid-area: logo-footer;
-    border-right: 1px solid #F0F0F0;
+    border-right: 1px solid var(--cor-branco);
 }
 
 .b2i-logo-footer {
@@ -340,22 +388,22 @@ footer {
 .rede-social i {
     display: block;
     font-size: 48px;
-    color: #A72076;
+    color: var(--cor-principal);
     text-align: center;
 }
 
 .rede-social i:hover {
-    color: #DF4C24;
+    color: var(--cor-secundario);
 }
 
 .institucional-footer {
     grid-area: institucional-footer;
-    border-right: 1px solid #F0F0F0;
+    border-right: 1px solid var(--cor-branco);
 }
 
 .servicos-footer {
     grid-area: servicos-footer;
-    border-right: 1px solid #F0F0F0;
+    border-right: 1px solid var(--cor-branco);
 }
 
 .parceiros-footer {
@@ -378,7 +426,7 @@ footer {
     position: fixed;
     bottom: 5rem;
     right: 1.3rem;
-    color: #A72076;
+    color: var(--cor-principal);
     width: 3rem;
     height: 3rem;
     display: flex;
@@ -390,21 +438,21 @@ footer {
 }
 
 .back-to-top:hover{
-    color: #DF4C24;
+    color: var(--cor-secundario);
 }
 
 .copyright {
-    background: #222222;
+    background: var(--cor-preto);
 }
 
 .copyright p{
     text-align: center;
     padding: 1em;
-    color: #F0F0F0;
+    color: var(--cor-branco);
 }
 
 @media screen  and (max-width: 800px)  {
-    .caixa, .intro, .sobre-nos, .principal, .servicos,.mapa, .mapa-conteudo, .caixa-footer, .img-intro, .img-sobrenos{
+    .caixa, .intro, .sobre-nos, .principal, .servicos,.mapa, .mapa-conteudo, .caixa-footer, .img-intro, .img-sobrenos,.area-comercial{
         width: auto;
     }
     header {
@@ -502,6 +550,14 @@ footer {
     .mapa h3 {
         font-size: 40px;
     }
+    .area-comercial-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .texto-comercial {
+        text-align: center;
+        padding-bottom: 20px;
+    }
     .container-footer {
         grid-template-columns: 1fr; 
         grid-template-areas: 
@@ -512,7 +568,7 @@ footer {
     }
     .logo-footer {
         border-right: 0px;
-        border-bottom: 1px solid #F0F0F0;
+        border-bottom: 1px solid var(--cor-branco);
         width: auto;
     }
 
@@ -522,13 +578,13 @@ footer {
     
     .institucional-footer {
         border-right: 0px;
-        border-bottom: 1px solid #F0F0F0;
+        border-bottom: 1px solid var(--cor-branco);
         padding: 1rem;
     }
     
     .servicos-footer {
         border-right: 0px;
-        border-bottom: 1px solid #F0F0F0;
+        border-bottom: 1px solid var(--cor-branco);
         padding: 1rem;
     }
     .copyright {
