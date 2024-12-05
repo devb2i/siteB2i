@@ -7,7 +7,8 @@
 }
 body {
     font-family: 'Montserrat',sans-serif; 
-    background: url("../img/pattern-randomized.svg");
+    background: url("../img/pattern-randomized.svg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
@@ -418,8 +419,13 @@ footer {
 
 .parceiros-footer a {
     display: block;
-    margin: 0 auto;
-    width: 50%;
+    margin: 5px auto; /* Adiciona espaço entre os itens */
+    width: 75%;
+    padding: 0px; /* Espaçamento interno */
+    background-color: var(--cor-preto); /* Cor de fundo similar ao azul do ícone */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    border-radius: 15px; /* Cantos arredondados */
 }
 
 .back-to-top {
